@@ -1,3 +1,10 @@
+:root {
+    --primary: darkblue;
+    --text-color: white;
+    --border-color: steelblue;
+    --shadow-color: gray;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,12 +12,12 @@
 }
 
 nav {
-    background-color: darkblue;
+    background-color: var(--primary);
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: var(--text-color);
     display: block;
     padding: 20px;
 }
@@ -18,9 +25,9 @@ nav a {
 img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--shadow-color);
 }
 
 p {
@@ -32,15 +39,15 @@ main {
 }
 
 h1 {
-    color: steelblue;
+    color: var(--border-color);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid var(--border-color);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--shadow-color);
     float: right;
 
 }
