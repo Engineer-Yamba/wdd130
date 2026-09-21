@@ -81,7 +81,7 @@ p {
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: rgba(225, 225, 225, 0.8);
+    background-color: var(--accent-color);
     padding: 15px;
 }
 
