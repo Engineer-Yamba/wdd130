@@ -38,6 +38,7 @@ h2 {
 
 h1 {
     font-size: 2rem;
+    text-shadow: 5px 20px 30px var(--secondary-color);
 }
 
 h2 {
