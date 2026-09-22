@@ -1,7 +1,7 @@
 :root {
     --primary-color: #d23;
     --secondary-color: #fffffF;
-    --accent-color: #4682b4;
+    --accent-color: #6f5d41;
     --heading-font: Georgia, serif;
     --body-font: Arial, sans-serif;
 }
@@ -47,6 +47,8 @@ h2 {
 p {
     padding: 0;
     margin-bottom: 15px;
+    color: var(--secondary-color);
+
 }
 
 .socialmedia a {
