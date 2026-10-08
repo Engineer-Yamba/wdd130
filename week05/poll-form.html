@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | User Poll</title>
+    <link rel="stylesheet" href="styles1/poll-form.css">
+</head>
+
+<body>
+    <header>
+        <h1>User Poll Form</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Contact information</legend>
+
+                <div class="form_item002 column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+
+
+                <div class="form_item002 column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences & Questions</legend>
+
+                <div class="form_item001 column1">
+                    <label for="browser">What is your favorite Browser:</label>
+                    <select id="browser_section" name="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="safari">Safari</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+
+                <div class="form_item001 column1">
+                    <label for="pet">Do you have a pet?</label>
+                    <input type="checkbox" id="pet" name="pet" value="yes">
+                </div>
+
+                <div class="form_item">
+                    <label for="places">List places you have lived:</label>
+                    <textarea id="places" name="places" rows="4"></textarea>
+                </div>
+            </fieldset>
+
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; WDD 130 | Styling Forms Activity</p>
+    </footer>
+</body>
+
+</html>
