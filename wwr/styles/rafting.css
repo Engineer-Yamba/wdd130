@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #d23;
+    --primary-color: #ffff09;
     --secondary-color: #fffffF;
     --accent-color: #6f5d41;
     --heading-font: Georgia, serif;
@@ -76,6 +76,7 @@ h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    text-shadow: 0 0 10px var(--accent-color);
 }
 
 h1 {
@@ -99,7 +100,7 @@ p {
     flex-direction: column;
     align-items: center;
     max-width: 1400px;
-    background-color: #ddd;
+
     margin-top: 1rem;
     padding: 15px;
     box-shadow: 0 5px 10px var(--accent-color);
