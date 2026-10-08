@@ -14,20 +14,62 @@
 
 body {
     font-family: var(--body-font);
-    color: #333;
 }
 
+/*
 header,
 main,
 footer {
-    width: 840px;
+    width: 1500px;
     margin: 0 auto;
 }
+    */
 
 header {
-    display: flex;
+    display: grid;
+    background-color: var(--accent-color);
+    grid-template-columns: 1fr 2fr;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    border: 1px solid var(--accent-color);
+    margin: 1rem auto;
+
+}
+
+header,
+logo,
+navContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+
+}
+
+ul {
+    border: 1px solid #fff;
+}
+
+li {
+    list-style-type: none;
+}
+
+li + li {
+    border-left: 1px solid #fff;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 1rem 1.5rem;
+    border-left-color: #fff 1px;
 }
 
 h1,
@@ -38,7 +80,7 @@ h2 {
 
 h1 {
     font-size: 2rem;
-    text-shadow: 5px 20px 30px var(--secondary-color);
+    text-shadow: 0px 20px 50px #000;
 }
 
 h2 {
@@ -48,17 +90,49 @@ h2 {
 p {
     padding: 0;
     margin-bottom: 15px;
-    color: var(--secondary-color);
 
 }
 
-.socialmedia a {
-    text-decoration: none;
+.history_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1400px;
+    background-color: #ddd;
+    margin-top: 1rem;
+    padding: 15px;
+    box-shadow: 0 5px 10px var(--accent-color);
+    border-radius: 2px;
+
 }
 
-.socialmedia img {
-    width: 30px;
-    height: 30px;
+.history_img {
+    width: 200px;
+    height: auto;
+}
+
+.company_history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.company_history p {
+    line-height: 1.7;
+    color: #000;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.history_img {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    max-width: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0 2 4 0.4);
 }
 
 .hero {
@@ -99,4 +173,80 @@ nav ul {
     display: flex;
     gap: 20px;
 
+}
+
+p {
+    color: black;
+}
+
+.adventureSection {
+    text-align: center;
+    padding: 30px 30px;
+}
+
+.adventureSection h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.adventure_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 15px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.cards {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px;
+
+}
+
+.adventureImage {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+}
+
+.cards figcaption {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent-color);
+    padding: 20px;
+    margin-top: 1rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.social_media {
+    display: flex;
+    padding: 15px;
+
+}
+
+.social_media img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
