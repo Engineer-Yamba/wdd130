@@ -90,6 +90,7 @@ h2 {
 p {
     padding: 0;
     margin-bottom: 15px;
+    color: var(--secondary-color);
 
 }
 
@@ -104,11 +105,6 @@ p {
     box-shadow: 0 5px 10px var(--accent-color);
     border-radius: 2px;
 
-}
-
-.history_img {
-    width: 200px;
-    height: auto;
 }
 
 .company_history {
@@ -131,7 +127,7 @@ p {
     padding: 1rem;
     max-width: 350px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0 2 4 0.4);
 }
 
@@ -173,10 +169,6 @@ nav ul {
     display: flex;
     gap: 20px;
 
-}
-
-p {
-    color: black;
 }
 
 .adventureSection {
@@ -249,4 +241,8 @@ footer p {
     width: 30px;
     height: 30px;
     border-radius: 50%;
+}
+
+.social_media a {
+    text-decoration: none;
 }
