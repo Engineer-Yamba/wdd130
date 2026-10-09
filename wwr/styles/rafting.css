@@ -237,3 +237,149 @@ footer p {
 .social_media a {
     text-decoration: none;
 }
+
+/* Week 5 project start here */
+
+.main_contact {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+
+.main_contact h1,
+.main_contact h2 {
+    color: #002276;
+}
+
+.main_contact h2 {
+    border-bottom: 2px solid #002276;
+    padding-bottom: 0.25rem;
+    margin-top: 2rem;
+}
+
+.info_about_company {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+@media screen and (min-width: 650px) {
+    .info_about_company {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .details_information,
+    .google_map {
+        flex: 1;
+    }
+}
+
+.google_map {
+    width: 100%;
+    height: 280px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.2rem;
+}
+
+.team_member_card {
+    margin: 0;
+    background-color: #f9f9f9;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    padding: 1.2rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card_image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.employee_title {
+    margin-top: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.form_contact_info {
+    background-color: #fdfafa;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--accent-color);
+    margin-top: 1rem;
+}
+
+.form_particle {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    color: #121;
+}
+
+.input_area,
+.textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #767676;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.fieldset_area {
+    border: 1px solid #767676;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #ffffff;
+    margin-bottom: 1.2rem;
+}
+
+.legend_area {
+    font-weight: bold;
+    padding: 0 0.4rem;
+    color: #121;
+}
+
+.radio_btn {
+    margin-bottom: 0.4rem;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.submit-btn {
+    background-color: #002276;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.75rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: var(--accent-color);
+}
+
+.submit-btn:focus {
+    outline: 3px solid #002227;
+}

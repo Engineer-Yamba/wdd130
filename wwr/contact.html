@@ -25,106 +25,109 @@
         </nav>
     </header>
 
-    <main class="main_contact">
-        <h1 class="contact">Contact Us</h1>
 
-        <section class="company">
-            <h2 class="company_title_info">Company Information</h2>
-            <div class="info_container">
-                <p><strong>Address: </strong> 23C Benjamin Lane Freetown sierra
-                    Leone</p>
-                <p><strong>Phone: </strong>+23273 568 278</p>
-                <p><strong>Email: </strong>info@wwrafting.com</p>
+    <main class="main_contact">
+        <h1 class="page_info">Contact Us</h1>
+
+
+        <section class="info_about_company">
+            <div class="details_information">
+                <h2>Company Information</h2>
+                <p><strong>Address:</strong> 23 Benjamin Freetown Sierra Leone</p>
+                <p><strong>Phone:</strong> +23273 499 103</p>
+                <p><strong>Email:</strong> info@wwrafting.com</p>
             </div>
 
-            <iframe class="map-iframe"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184852.12604812302!2d-116.327599!3d43.613739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54aef170e917b209%3A0xa61019f6a5bc8392!2sBoise%2C%20ID!5e0!3m2!1sen!2sus!4v1700000000000"
-              width="600" height="450" loading="lazy" title="White Water Rafting Company Location">
+
+            <iframe class="google_map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.0123!2d-13.2345!3d8.4845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf04c309fc5fb7ff%3A0x4052023a0dcc1468!2s23C%20Benjamin%20Ln%2C%20Freetown%2C%20Sierra%20Leone!5e0!3m2!1sen!2ssl!4v1700000000000"
+              loading="lazy">
             </iframe>
         </section>
 
-        <section class="employee_details">
-            <h2 class="company_title_info">Meet Our Team</h2>
-            <div class="employee_grid">
-                <figure class="emp_card">
-                    <img src="images/ey.png" alt="Photo of Emmanuel yamba">
-                    <figcaption class="emp_caption"><strong>Emmanuel Yamba</strong> -General Manager
-                    </figcaption>
+
+        <section class="employee-section">
+            <h2>Meet Our Team</h2>
+
+            <div class="employee-grid">
+                <figure class="team_member_card">
+                    <img src="images/ecode.png" alt="Photo of Mr. Ecode" class="card_image">
+                    <figcaption class="employee_title"><strong>Emmanuel Yamba</strong><br> General
+                        Manager</figcaption>
                 </figure>
 
-                <figure class="emp_card">
-                    <img src="images/miss.png" alt="Photo of Mary Jalloh">
-                    <figcaption class="emp_caption"><strong>Mary Jalloh</strong> -Lead River Guide
-                    </figcaption>
+                <figure class="team_member_card">
+                    <img src="images/Mr. Div.jpg" alt="Photo of Mr. Div" class="card_image">
+                    <figcaption class="employee_title"><strong>Sahr Jimissa</strong><br>Lead River
+                        Guide</figcaption>
                 </figure>
 
-                <figure class="emp_card">
-                    <img src="images/jacob (1).png" alt="photo of Jacob Yamba">
-                    <figcaption class="emp_caption"><strong>Emmanuel Yamba</strong> -Reservations
-                        Coordination
-                    </figcaption>
-
+                <figure class="team_member_card">
+                    <img src="images/db1.jpg" alt="Photo of Mr. Data" class="card_image">
+                    <figcaption class="employee_title"><strong>Isaiah
+                            Yamba</strong><br>Reservations Coordinator</figcaption>
                 </figure>
-
             </div>
-
         </section>
 
-        <!--Contact area-->
-        <section class="form_info">
+
+        <section class="form_container">
             <h2>Send Us a Message</h2>
-            <form action="#" class="contact_form">
+
+            <form action="#" method="post" class="form_contact_info">
+
+                <!-- User Name -->
                 <div class="form_particle">
-                    <label for="name" class="user_label">Name</label>
-                    <input type="text" name="username" id="username" class="input_area" required>
+                    <label for="username" class="form-label">Name:</label>
+                    <input type="text" id="name" name="username" class="input_area" required>
                 </div>
 
+
                 <div class="form_particle">
-                    <label for="email" class="user_label">Name</label>
-                    <input type="text" name="useremail" id="useremail" class="input_area" required>
+                    <label for="useremail" class="form-label">Email:</label>
+                    <input type="email" id="email" name="useremail" class="input_area" required>
                 </div>
 
 
-                <fieldset class="fieldset_form">
-                    <legend class="form_legend">Purpose of Message:</legend>
+                <fieldset class="fieldset_area">
+                    <legend class="legend_area">Purpose of Message:</legend>
 
-                    <div class="radio-bottom">
+                    <div class="radio_btn">
                         <input type="radio" id="general" name="purpose" value="general" checked>
                         <label for="general">General Inquiry</label>
                     </div>
 
-                    <div class="radio-bottom">
-                        <input type="radio" id="reservation" name="purpose" value="reservation"
-                          checked>
+                    <div class="radio_btn">
+                        <input type="radio" id="reserve" name="purpose" value="reservation">
                         <label for="reservation">Reservation Question</label>
                     </div>
 
-                    <div class="radio-bottom">
-                        <input type="radio" id="suggestion" name="purpose" value="suggestion"
-                          checked>
-                        <label for="general">Website Suggestion</label>
+                    <div class="radio_btn">
+                        <input type="radio" id="suggest" name="purpose" value="suggestion">
+                        <label for="suggestion">Website Suggestion</label>
                     </div>
-
                 </fieldset>
 
-                <div class="form-particle">
-                    <label for="message" class="user_input">Message:</label>
-                    <textarea id="message" name="message" rows="4" class="textarea_message"
+
+                <div class="form_particle">
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea id="message" name="message" rows="4" class="textarea"
                       required></textarea>
                 </div>
 
-                <div class="form-particle checkbox-area">
+
+                <div class="form-item checkbox-item">
                     <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
                     <label for="newsletter">Please subscribe me to the monthly newsletter</label>
                 </div>
 
-                <div class="form_particle">
-                    <button type="submit" class="submit_Btn">Send Message</button>
 
+                <div class="form_particle">
+                    <button type="submit" class="submit-btn">Send Message</button>
                 </div>
+
             </form>
         </section>
-
     </main>
 
     <footer>
