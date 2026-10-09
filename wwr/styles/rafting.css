@@ -249,6 +249,13 @@ footer p {
 .main_contact h1,
 .main_contact h2 {
     color: #002276;
+
+}
+
+.main_contact h1,
+.main_contact h2,
+.details_information p {
+    margin-left: 2rem;
 }
 
 .main_contact h2 {
@@ -303,7 +310,7 @@ footer p {
     width: 250px;
     height: 250px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 50%;
 }
 
 .employee_title {
@@ -339,6 +346,12 @@ footer p {
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 1rem;
+}
+
+.details_information p {
+    color: #002222;
+    font-size: 1.3rem;
+    line-height: .99;
 }
 
 .fieldset_area {
